@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="bookNumber">
+<button (click)="search()" >Find book</button>
+
+<div *ngIf="post">
+  <h1>{{post.title}}</h1>
+  <p>{{post.body}}</p>
+</div>
